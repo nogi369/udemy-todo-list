@@ -1,1 +1,9 @@
-export const Todo = () => <h2>Reminder</h2>
+import { List } from "./List"
+import { Form } from "./Form"
+
+export const Todo = () => {
+  <>
+    <Form />
+    <List />
+  </>
+}
