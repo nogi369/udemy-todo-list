@@ -27,11 +27,15 @@ export const Todo = () => {
 
     setTodos(newTodos);
   }
+
+  const createTodo = (todo) => {
+    setTodos([ ...todos, todo ]);
+  }
   
   return (
     <>
-    <Form />
     <List todos={todos} deleteTodo={deleteTodo} />
+    <Form createTodo={createTodo} />
     </>
   )
 }
